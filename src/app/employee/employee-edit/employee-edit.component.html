@@ -17,7 +17,10 @@
                 <td>Username/Password:</td>
                 <td>
                     <input [(ngModel)]="employee.username" type="text" size="30" >
-                    <input [(ngModel)]="employee.password" type="text" size="30" >
+                    <input *ngIf="showPassword" [(ngModel)]="employee.password" type="text" size="30" >
+                    <input *ngIf="!showPassword" [(ngModel)]="employee.password" type="password" size="30" >
+                    <input [(ngModel)]="showPassword" type="checkbox">
+                    <span>show password</span>
                 </td>
             </tr>
             <tr>

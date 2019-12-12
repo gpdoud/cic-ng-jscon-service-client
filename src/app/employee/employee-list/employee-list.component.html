@@ -4,6 +4,8 @@
         <span class="page-title">Employee List</span>
         <span> | </span>
         <span><a routerLink="/employees/create">New Employee</a></span>
+        <span> | </span>
+        <span><input [(ngModel)]="searchCriteria" type="text" placeholder="Search"></span>
     </header>
     <main class="content">
         <table class="table table-sm">
@@ -16,7 +18,7 @@
                 <td><button class="btn btn-link" (click)="sortBy('salary')">Salary:</button></td>
                 <td>Action:</td>
             </tr>
-            <tr *ngFor="let empl of employees | sort:sortCriteria:sortOrder">
+            <tr *ngFor="let empl of employees | search:searchCriteria | sort:sortCriteria:sortOrder">
                 <td>{{empl.id}}</td>
                 <td>{{empl.name}}</td>
                 <td>{{empl.username}}</td>

@@ -11,6 +11,7 @@ export class EmployeeListComponent implements OnInit {
   
   employees: Employee[];
 
+  searchCriteria: string = '';
   sortCriteria: string = "username";
   sortOrder: string = "asc";
 

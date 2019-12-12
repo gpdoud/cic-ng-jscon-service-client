@@ -11,8 +11,13 @@ import { Employee } from '../employee';
 export class EmployeeDetailComponent implements OnInit {
 
   employee: Employee = new Employee();
-
+  showPassword: boolean = false;
+  
+  verifyDelete: boolean = false;
   delete(): void {
+    this.verifyDelete = !this.verifyDelete;
+  }
+  verifiedDelete(): void {
     this.emplsvc.delete(this.employee.id).subscribe(
       res =>  this.router.navigateByUrl("/employees/list")
       ,err => console.error(err)
