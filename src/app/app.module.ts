@@ -8,10 +8,11 @@ import { AppComponent } from './app.component';
 import { ApplicationComponents } from './app-routing.module';
 import { MenuComponent } from './misc/menu/menu.component';
 import { MenuitemComponent } from './misc/menu/menuitem.component';
+import { SortPipe } from './misc/sort.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent, ApplicationComponents, MenuComponent, MenuitemComponent
+    AppComponent, ApplicationComponents, MenuComponent, MenuitemComponent, SortPipe
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule,

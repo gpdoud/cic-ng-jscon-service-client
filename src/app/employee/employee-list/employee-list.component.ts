@@ -11,6 +11,16 @@ export class EmployeeListComponent implements OnInit {
   
   employees: Employee[];
 
+  sortCriteria: string = "username";
+  sortOrder: string = "asc";
+
+  sortBy(prop: string): void {
+    if(prop === this.sortCriteria) {
+      this.sortOrder = this.sortOrder === "asc" ? "desc" : "asc";
+    }
+    this.sortCriteria = prop;
+  }
+
   constructor(
     private emplsvc: EmployeeService
   ) { }

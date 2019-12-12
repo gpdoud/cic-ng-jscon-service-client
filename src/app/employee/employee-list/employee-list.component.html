@@ -8,15 +8,15 @@
     <main class="content">
         <table class="table table-sm">
             <tr class="table-header">
-                <td>Id:</td>
-                <td>Name:</td>
-                <td>Username:</td>
-                <td>Address:</td>
-                <td>PTO Days:</td>
-                <td>Salary:</td>
+                <td><button class="btn btn-link" (click)="sortBy('id')">Id:</button></td>
+                <td><button class="btn btn-link" (click)="sortBy('name')">Name:</button></td>
+                <td><button class="btn btn-link" (click)="sortBy('username')">Username:</button></td>
+                <td><button class="btn btn-link" (click)="sortBy('address')">Address:</button></td>
+                <td><button class="btn btn-link" (click)="sortBy('ptoDays')">PTO Days:</button></td>
+                <td><button class="btn btn-link" (click)="sortBy('salary')">Salary:</button></td>
                 <td>Action:</td>
             </tr>
-            <tr *ngFor="let empl of employees">
+            <tr *ngFor="let empl of employees | sort:sortCriteria:sortOrder">
                 <td>{{empl.id}}</td>
                 <td>{{empl.name}}</td>
                 <td>{{empl.username}}</td>
