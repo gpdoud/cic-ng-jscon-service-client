@@ -1,0 +1,39 @@
+<app-menu></app-menu>
+<div class="component">
+    <header class="page-header">
+        <span class="page-title">Employee List</span>
+        <span> | </span>
+        <span><a routerLink="/employees/create">New Employee</a></span>
+    </header>
+    <main class="content">
+        <table class="table table-sm">
+            <tr class="table-header">
+                <td>Id:</td>
+                <td>Name:</td>
+                <td>Username:</td>
+                <td>Address:</td>
+                <td>PTO Days:</td>
+                <td>Salary:</td>
+                <td>Action:</td>
+            </tr>
+            <tr *ngFor="let empl of employees">
+                <td>{{empl.id}}</td>
+                <td>{{empl.name}}</td>
+                <td>{{empl.username}}</td>
+                <td>{{empl.address}}, {{empl.city}}, {{empl.stateCode}} {{empl.zip}}</td>
+                <td>{{empl.ptoDays}}</td>
+                <td>{{empl.salary | currency}}</td>
+                <td>
+                    <span>
+                        <a routerLink="/employees/detail/{{empl.id}}">[Detail]</a>
+                    </span>
+                    <span>&nbsp;</span>
+                    <span>
+                        <a routerLink="/employees/edit/{{empl.id}}">[Edit]</a>
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer>Copyright 2020 by MAX Technical Training All Rights Reserved</footer>
+</div>
