@@ -1,5 +1,7 @@
 # Angular capstone project for Cincinnati Financial
 
+**Note: The Azure service will be available through Sunday, December 22 afterwhich it will be unavailable** 
+
 ## Instructor
 
 - *Greg Doud*, Sr. Instructor, MAX Technical Training
