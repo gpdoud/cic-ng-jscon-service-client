@@ -11,6 +11,7 @@ import { Employee } from '../employee';
 export class EmployeeCreateComponent implements OnInit {
 
   employee: Employee = new Employee();
+  showPassword: boolean = false;
 
   save(): void {
     this.emplsvc.insert(this.employee).subscribe(
