@@ -1,27 +1,24 @@
-# Cic
+# Angular capstone project for Cincinnati Financial
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+## Instructor
 
-## Development server
+- *Greg Doud*, Sr. Instructor, MAX Technical Training
+- *Email*: gdoud@maxtrain.com
+- *LinkedIn*: LinkedIn.com/in/gregorydoud
+  - on connection request, mention Angular class and all connections will be accepted
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Evaluations
 
-## Code scaffolding
+Please go to this link before leaving class today and drop down the list to find the Angular class and fill out the evaluation. Please!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    https://www.metricsthatmatter.com/MTMStudent/(S(akpsdyintfzf5eml43no5box))/ClassListPage.aspx?&orig=6&VendorAlias=max&LanguageChanged=-1&LanguageID=1&z=1576749725&manual=0
 
-## Build
+## Comments
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+It was my pleasure to be your instructor for Angular.
 
-## Running unit tests
+Feel free to contact me after class if you have questions that you believe I can help with concerning Angular or other topics.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Best wishes for a joyous holiday season.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Greg Doud
